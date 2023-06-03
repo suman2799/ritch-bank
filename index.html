@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Bank</title>
+	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+        <hi class="logo">RITCH BANK</hi>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <nav>
+            <ul>
+				<li><a href="index.php" class="active-link">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Notices</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-lable"> 
+            <span></span>
+        </label>
+    </header>
+
+	<main>
+		<section>
+			<div class="home">
+				<div class="home-img">
+					<img class="welcome-img" src="img/welcome-side.png" alt="">
+				</div>
+				<div class="home-text">
+					<h1>Welcome To <br> RITCH BANK</h1>
+					<div class="home-btn">
+						<button type="submit" name="clientLoginbtn" onclick="redirectClient()" class="btn btn-home-login" id="buttonClient">Client Login</button>
+						<button type="button" name="employeeLoginbtn" onclick="redirectEmployee()" class="btn btn-home-login" id="buttonEmployee">Employee Login</button>
+						<button type="button" name="managerLoginbtn" onclick="redirectManager()" class="btn btn-home-login" id="buttonManager">Manager Login</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section>
+			<div class="container">
+				
+				<div class="bg-modal">
+					<div class="modal-content">
+						<div class="close">+</div>
+						<h2>Welcome Back!</h2>
+						<form action="backend/login.php" method="POST" class="log-control">
+							<div class="form-col">
+								<label class="log-label">Email Id.</label>
+								<input type="email" name="email" class="log-input" value="suman@gmail.com" placeholder="Enter Email Id." required/>
+							</div>
+							<div class="form-col">
+								<label class="log-label">Password</label>
+								<input type="password" name="password" class="log-input" min="1" value="suman" placeholder="Enter Password" required/>
+							</div>
+							<button type="submit" class="btn btn-login" name="clientLogin">Log In</button>
+						</form>
+					</div>
+				</div>
+							
+				
+				<div class="bg-modal bg-modal-employee">
+					<div class="modal-content modal-content-employee">
+						<div class="close close-employee">+</div>
+						<h2>Welcome Employee!</h2>
+						<form action="backend/login.php" method="POST" class="log-control">
+							<div class="form-col">
+								<label class="log-label">Email Id.</label>
+								<input type="email" name="email" class="log-input" value="rahul@gmail.com" placeholder="Enter Email Id." required/>
+							</div>
+							<div class="form-col">
+								<label class="log-label">Password</label>
+								<input type="password" name="password" class="log-input" min="1" value="rahul" placeholder="Enter Password" required/>
+							</div>
+							<button type="submit" class="btn btn-login btn-login-employee" name="employeeLogin">Log In</button>
+						</form>
+					</div>
+				</div>
+				
+				
+				<div class="bg-modal bg-modal-manager">
+					<div class="modal-content modal-content-manager">
+						<div class="close close-manager">+</div>
+						<h2>Welcome Manager!</h2>
+						<form action="backend/login.php" method="POST" class="log-control">
+							<div class="form-col">
+								<label class="log-label">Email Id.</label>
+								<input type="email" name="email" class="log-input" value="ravi@gmail.com" placeholder="Enter Email Id." required/>
+							</div>
+							<div class="form-col">
+								<label class="log-label">Password</label>
+								<input type="password" name="password" class="log-input" min="1" value="raviS" placeholder="Enter Password" required/>
+							</div>
+							<button type="submit" class="btn btn-login btn-login-manager" name="managerLogin">Log In</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr>
+	</main>	
+
+	<footer></footer>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

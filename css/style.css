@@ -1,0 +1,1545 @@
+/* ------ custom font ------ */
+/* montserrat-100 - vietnamese_latin-ext_latin_cyrillic-ext_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    src: local(''),
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-200 - vietnamese_latin-ext_latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    src: local(''),
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-300 - vietnamese_latin-ext_latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-regular - vietnamese_latin-ext_latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-500 - vietnamese_latin-ext_latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-600 - vietnamese_latin-ext_latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - vietnamese_latin-ext_latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-800 - vietnamese_latin-ext_latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-900 - vietnamese_latin-ext_latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v15-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
+
+/* ------ variables ------ */
+:root{
+    --navbar-bg: rgba(85, 214, 170, 0.95);
+    /* --navbar-bg: rgba(254, 167, 186, 0.95); */
+    --thead-bg: #b8e9e8;
+    /* --thead-bg: rgba(185, 224, 255, 1); */
+    --tbody-bg: #f1f2f3;
+    --btn-color:#0d6efd;
+    --btn-hv-color:#fdfdfd;
+    --btn-bg-color:#0d6efd;
+    --btn-bd-color:#0d6efd;
+    --btn-view-color: #367620;
+    --btn-view-hv-color:#fdfdfd;
+    --btn-view-bg-color: #367620;
+    --btn-view-hv-bg-color: #50b52d;
+    --btn-view-bd-color: #367620;
+    --btn-view-hv-bd-color: #50b52d;
+    --btn-delete-color:#dc3545;
+    --btn-delete-hv-color:#fdfdfd;
+    --btn-delete-bg-color:#dc3545;
+    --btn-delete-bd-color:#dc3545;
+    --btn-find-color: #757575;
+    --btn-find-hv-color:#fdfdfd;
+    --btn-find-bg-color: #757575;
+    --btn-find-bd-color: #757575;
+    --btn-remove-color: #dc3545;
+    --btn-remove-hv-color:#fdfdfd;
+    --btn-remove-bg-color: #dc3545;
+    --btn-remove-bd-color: #dc3545;
+    --btn-form-submit-bd-color: #1ec779;
+    --btn-form-submit-bg-color: #1ec779;
+    --btn-form-submit-hv-bd-color: #157347;
+    --btn-form-submit-hv-bg-color: #157347;
+}
+
+
+
+/* ----- reset for box-sizing -----  */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+
+
+/* ------ body style ------ */
+body{
+    margin: 0;
+    /* space for non-overlapping navigation-bar */
+    padding-top: 50px;
+    /* background: #999; */
+    font-family:  "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+
+
+/* ------ horizontal rule style ------ */
+hr {
+    margin: 1em 0;
+    color: inherit;
+    background-color: currentColor;
+    opacity: .40;
+}
+
+/* .content{
+    height: 200vh;
+    background-image: url(//unsplash.it/1000/1000);
+    background-color: #333;
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: grid;
+    place-items: center; 
+}*/
+
+
+
+/* ------ start of navigation-bar ------ */
+
+header{
+    box-shadow: 0em 0em 1.2em rgb(127 137 161 / 51%);
+    background: var(--navbar-bg);
+    text-align: center;
+    position: fixed;
+    /* NavBar always on top */
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    padding: 0.7em;
+}
+
+/* allow checkbox to gain focus & making it tapbable */
+.nav-toggle{
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+    outline: 3px solid rgba(lightblue, .75);
+}
+
+/* menu button position */
+.nav-toggle-lable{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 2em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* start of menu button */
+.nav-toggle-lable span,
+.nav-toggle-lable span::before,
+.nav-toggle-lable span::after{
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-lable span::before,
+.nav-toggle-lable span::after{
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-lable span::before{
+    bottom: 7px;
+}
+
+.nav-toggle-lable span::after{
+    top: 7px;
+}
+/* end of menu button */
+
+nav{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+
+    /* menu drop & animation */
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul{
+    margin: 0;
+    padding: 1em;
+    list-style: none;
+    background: var(--navbar-bg);
+}
+
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a{
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+
+    /* links animation menu off*/
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+}
+
+nav a:hover{
+    color: #000;
+}
+
+/* toggle menu on-off */
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+}
+
+/* links animation menu on */
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity .25s ease-in-out .25s;
+}
+
+.logo{
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+}
+
+
+
+/* -------- start of logout menu -------- */
+
+.login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    margin: 0em 2em 0em 0em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* ------ for the pointing arrow ------ */
+.login::after {
+    content: "";
+    position: absolute;
+    top: 2.8em;
+    /* stay relative to the icon */
+    transform: translate(-60%);
+    border: 10px solid;
+    border-color: #ff000000 transparent #e3ffda transparent;
+    display: none;
+}
+
+.login ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.login li {
+    list-style: none;
+}
+
+.login a {
+    text-decoration: none;
+}
+
+.login ul li a::before {
+    display: none;
+}
+
+/* -------- profile icon -------- */
+.login .profile-icon {
+    width: 40px;
+}
+
+
+
+/* -------- start of dropdown menu style -------- */
+
+.login ul li  .dropdown {
+    font-size: 0.9em;
+    font-weight: bolder;
+    position: absolute;
+    top: 4.5em;
+    right: 0em;
+    border-radius: 0.5em;
+    background: #e3ffda;
+    display: none;
+    box-shadow: 0.3em -0.3em 1em 0em rgb(85 214 170);
+}
+
+.login ul li .dropdown ul {
+    display: block;
+    margin: 0.5em 0em;
+    padding: 0em;
+}
+
+.login ul li .dropdown ul li {
+    font-weight: 600;
+    margin: 0;
+    padding: 1em 1.5em;
+    text-align: right;
+}
+
+/* -------- reset password option style -------- */
+.login ul li .dropdown ul li a {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+}
+
+/* -------- reset password option hover effect -------- */
+.login ul li .dropdown ul li a:hover {
+    color: #80a9a7;
+}
+
+/* -------- logout option button -------- */
+.login ul li .dropdown ul li .logout-btn {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 500;
+    padding: 0.7em;
+    margin: 0em 2em;
+}
+
+/* -------- logout option hover effect -------- */
+.login ul li .dropdown ul li .logout-btn:hover {
+    background: #ffdede;
+    border-radius: 5em;
+    padding: 0.7em;
+}
+
+/* -------- logout icon -------- */
+.login .logout-icon {
+    width: 2em;
+    margin-right: 0.5em;
+}
+/* -------- end of dropdown menu style -------- */
+
+
+
+/* -------- toggle menu on/off -------- */
+.login.active::after {
+    display: block;
+}
+
+.login li.active .dropdown {
+    display: block;
+}
+/* -------- end of logout menu -------- */
+
+
+
+.breadcrumbs {
+    /* background-color: #e3f1ff; */
+    padding: 1em 0em 1em 1em;
+}
+
+.breadcrumbs-title {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.breadcrumbs-title h2 {
+    padding: 0.2em;
+    color: cadetblue;
+    font-weight: 500;
+    margin: 0;
+    text-align: unset;
+}
+
+.breadcrumbs-hr {
+    height: 0.3em;
+    margin: 0;
+    opacity: 0.1;
+}
+
+
+/* -------- start of navbar media query -------- */
+
+@media screen and (min-width: 1100px){
+
+    /* ------ body style ------ */
+    body{
+        /* space for non-overlapping navigation-bar */
+        padding-top: 65px;
+    }
+
+    /* turn off menu button */
+    .nav-toggle-lable{
+        display: none;
+
+    }
+
+    /* group haeder components into grid */
+    header{
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 8fr) 1fr;
+        box-shadow: 0em 0em 1.2em rgb(127 137 161 / 51%);
+    }
+
+    /* position logo in grid*/
+    .logo{
+        grid-column: 2 / 3;
+    }
+
+    /* position links in grid*/
+    nav{
+        /* turns off everything in nav function before this */
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /* position links inside grid */
+    nav ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        background: transparent;
+        align-items: center;
+    }
+
+    /* remove or add margin to the links */
+    nav li{
+        margin-left: 2em;
+        margin-bottom: 0;
+    }
+
+    /* start of hover effect */
+    nav a{
+        opacity: 1;
+        position: relative;
+    }
+
+    /* hover effect on */
+    nav a::before{
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        border-radius: 10px; 
+        position: absolute;
+        top: -1em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }
+
+    /* hover effect off */
+    nav a:hover::before{
+        transform: scale(1, 1);
+    }
+    /* end of hover effect */
+
+    .logo{
+        color: white;
+        font-size: 2.2em;
+        letter-spacing: 0.1em;
+        transition: 0.5s;
+    }
+
+
+
+    /* -------- start of logout menu -------- */
+
+    .login {
+        margin: 0em 1em 0em 1em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    /* ------ for the pointing arrow ------ */
+    .login::after {
+        content: "";
+        position: absolute;
+        top: 2.8em;
+        /* stay relative to the icon */
+        transform: translate(0%);
+        border: 10px solid;
+        border-color: #ff000000 transparent #e3ffda transparent;
+        display: none;
+    }
+    
+    .login ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .login li {
+        list-style: none;
+    }
+
+    .login a {
+        display: flex;
+        text-decoration: none;
+    }
+
+    .login ul li a::before {
+        display: none;
+    }
+    
+    /* -------- profile icon -------- */
+    .login .profile-icon {
+        width: 40px;
+    }
+    
+    /* -------- profile icon hover effect -------- */
+    .login .profile-icon:hover {
+        opacity: 0.5;
+    }    
+    
+
+
+    /* -------- start of dropdown menu style -------- */
+
+    .login ul li  .dropdown {
+        font-size: 0.9em;
+        font-weight: bolder;
+        position: absolute;
+        top: 4.5em;
+        right: 0em;
+        border-radius: 0.5em;
+        background: #e3ffda;
+        display: none;
+        box-shadow: 0.3em -0.3em 1em 0em rgb(85 214 170);
+    }
+    
+    .login ul li .dropdown ul {
+        display: block;
+        margin: 0.5em 0em;
+        padding: 0em;
+    }
+    
+    .login ul li .dropdown ul li {
+        margin: 0;
+        padding: 1em 1.5em;
+        text-align: right;
+    }
+
+    .login ul li .dropdown ul li .logout-btn {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        padding: 0.7em;
+        margin: 0em 2em;
+    }
+    
+    /* -------- logout option hover effect -------- */
+    .login ul li .dropdown ul li .logout-btn:hover {
+        background: #ffdede;
+        border-radius: 5em;
+        padding: 0.7em;
+    }
+
+    /* -------- logout icon -------- */
+    .login .logout-icon {
+        width: 2em;
+        margin-right: 0.5em;
+    }
+    /* -------- end of dropdown menu style -------- */
+
+
+
+    /* -------- toggle menu on/off -------- */
+    .login.active::after {
+        display: block;
+    }
+
+    .login li.active .dropdown {
+        display: block;
+    }
+    /* -------- end of logout menu -------- */
+
+    .breadcrumbs {
+        /* background-color: #e3f1ff; */
+        margin: 0;
+        padding: 1.5em;
+    }
+    
+    .breadcrumbs-title {
+        margin: 0 6em;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .breadcrumbs-title h2 {
+        padding: 0;
+    }
+}
+/* -------- end of navbar media query -------- */
+/* -------- end of navigation bar -------- */
+
+
+
+/* -------- start of main section -------- */
+
+main{
+    background-color: rgb(255, 255, 255);
+    /* background-image: url(//unsplash.it/1000/1000);
+    background-color: #333;
+    background-blend-mode: multiply;
+    background-size: cover; */
+}
+
+.container{
+    width: 81%;
+    color: rgb(0, 0, 0);
+    min-height: 40px;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------- start of titles style -------- */
+h1,
+.container h1 {
+    margin: 0;
+    width: 100%;
+    background: #afffae;
+    color: #555353;
+    font-size: 2em;
+    font-weight: 500;
+    padding: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.container h2 {
+    width: 100%;
+    background: #e0e0e0;
+    text-align: center;
+    color: #555353;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0.3em;
+    border-radius: 0.5em;
+}
+
+.modal-content h2 {
+    margin: 1.2em auto;
+    width: 100%;
+    background: #e0e0e0;
+    text-align: center;
+    color: #555353;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0.3em;
+    border-radius: 0.5em;
+}
+
+.container h3 {
+    width: 100%;
+    text-align: center;
+    color: #555353;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.form-control h4 {
+    display: none;
+    text-transform: uppercase;
+}
+/* -------- end of titles style -------- */
+
+
+
+/* -------- start of table style -------- */
+table {
+    margin: 1em 0em;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: 500;
+    background-color:  var(--thead-bg);
+    border: 1px solid #dee2e6;
+    padding: 1.5em 0.5em;
+    text-align: center;
+    justify-content: center;
+}
+
+td {
+    background-color: var(--tbody-bg);
+    border: 1px solid #dee2e6;
+    padding: 1em 0.2em;
+    text-align: center;
+    justify-content: center;
+}
+/* -------- end of titles style -------- */
+
+
+
+/* -------- start of buttons style -------- */
+
+/* -------- basic/blue button template --------  */
+.btn{
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--btn-color);
+    margin: 0em 1em;
+    padding: 0.9em 0.9em;
+    border: 0.15em solid var(--btn-bd-color);
+    border-radius: 0.3em;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.btn:hover{
+    background-color: var(--btn-bg-color);
+    color: var(--btn-hv-color);
+    border: 0.15em solid var(--btn-bd-color);
+}
+
+/* -------- green/find/view button template --------  */
+.btn-view{
+    color: var(--btn-view-color);
+    border: 0.15em solid var(--btn-view-bd-color);
+}
+
+.btn-view:hover{
+    color: var(--btn-view-hv-color);
+    border: 0.15em solid var(--btn-view-hv-bd-color);
+    background: var(--btn-view-hv-bg-color);
+}
+
+/* -------- red/delete/reset button template --------  */
+.btn-delete{
+    color: var(--btn-delete-color);
+    border: 0.15em solid var(--btn-delete-bd-color);
+}
+
+.btn-delete:hover{
+    color: var(--btn-delete-hv-color);
+    border: 0.15em solid var(--btn-delete-bd-color);
+    background: var(--btn-delete-bg-color);
+}
+
+/* -------- search/silver button tempalte --------  */
+.btn-find {
+    background: #f1f1f1;
+    margin: 0;
+    color: var(--btn-find-color);
+    border: 0.1em solid var(--btn-find-bd-color);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn-find:hover {
+    color: var(--btn-find-hv-color);
+    background: var(--btn-find-bg-color);
+    border: 0.1em solid var(--btn-find-bd-color);
+}
+
+/* -------- search/red button tempalte --------  */
+.btn-remove {
+    background: #fbecec;
+    margin: 0;
+    color: var(--btn-remove-color);
+    border: 0.1em solid var(--btn-remove-bd-color);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn-remove:hover {
+    color: var(--btn-remove-hv-color);
+    background: var(--btn-remove-bg-color);
+    border: 0.1em solid var(--btn-remove-bd-color);
+}
+
+/* -------- table/view/green button tempalte --------  */
+#btn-view-table{
+    color: var(--btn-color);
+    font-size: .8em;
+    font-weight: 600;
+    margin-left: 0.5em;
+    margin-right: 0;
+    padding: 0.3em 0.9em;
+    border: 0.085em solid var(--btn-bd-color);
+    text-transform: uppercase;
+}
+
+#btn-view-table:hover{
+    color: var(--btn-view-hv-color);
+    border: 0.085em solid var(--btn-bd-color);
+    background: var(--btn-bg-color);
+}
+
+/* -------- table/edit/green button tempalte --------  */
+#btn-edit-table{
+    color: var(--btn-view-color);
+    font-size: .8em;
+    font-weight: 600;
+    margin-left: 0.5em;
+    margin-right: 0;
+    padding: 0.3em 0.9em;
+    border: 0.085em solid var(--btn-view-bd-color);
+    text-transform: uppercase;
+}
+
+#btn-edit-table:hover{
+    color: var(--btn-view-hv-color);
+    border: 0.085em solid var(--btn-view-hv-bd-color);
+    background: var(--btn-view-hv-bg-color);
+}
+
+/* -------- table/delete/red button tempalte --------  */
+#btn-delete-table{
+    color: var(--btn-delete-color);
+    font-size: .8em;
+    font-weight: 600;
+    margin-right: 0.5em;
+    padding: 0.3em 0.9em;
+    border: 0.085em solid var(--btn-delete-bd-color);
+    text-transform: uppercase;
+}
+
+#btn-delete-table:hover{
+    color: var(--btn-delete-hv-color);
+    border: 0.085em solid var(--btn-delete-bd-color);
+    background: var(--btn-delete-bg-color);
+}
+
+/* -------- formsubmit/green button tempalte --------  */
+#btn-form-submit {
+    margin: 0;
+    color: var(--btn-view-hv-color);
+    background: var(--btn-form-submit-bg-color);
+    border: 0.15em solid var( --btn-form-submit-bd-color);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+#btn-form-submit:hover{
+    color: var(--btn-view-hv-color);
+    border: 0.15em solid var( --btn-form-submit-hv-bd-color);
+    background: var(--btn-form-submit-hv-bg-color);
+}
+
+/* -------- formreset/red button tempalte --------  */
+#btn-form-reset {
+    /* background: #fff3f4; */
+    margin: 0;
+    color: var(--btn-delete-color);
+    border: 0.15em solid var(--btn-delete-bd-color);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+#btn-form-reset:hover{
+    color: var(--btn-delete-hv-color);
+    border: 0.15em solid var(--btn-delete-bd-color);
+    background: var(--btn-delete-bg-color);
+}
+
+/* -------- formedit/green trans button tempalte --------  */
+#btn-form-edit {
+    margin: 0;
+    border: 0.15em solid var(--btn-view-bd-color);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+#btn-form-edit:hover{
+    color: var(--btn-delete-hv-color);
+    border: 0.15em solid var(--btn-view-hv-bd-color);
+    background: var(--btn-view-hv-bg-color);
+}
+
+/* -------- formexit/blue trans button tempalte --------  */
+#btn-form-exit {
+    /* background: #f3f6ff; */
+    margin: 0;
+    border: 0.15em solid var(--btn-bd-color);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+#btn-form-exit:hover{
+    color: var(--btn-delete-hv-color);
+    border: 0.15em solid var(--btn-bd-color);
+    background: var(--btn-bg-color);
+}
+/* -------- end of button styles --------  */
+
+
+
+/* -------- start dashboard tabs style --------  */
+
+.tabs {
+    padding: 1em 0em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------- hide radio buttons for tabs --------  */
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tab-label {
+    font-weight: 600;
+    margin: 0em 1em;
+    align-items: center;
+    padding: 1.5em;
+    /* background: #e2e2e2; */
+    /* border-radius: 0.5em 0.5em 0em 0em; */
+}
+
+/* -------- tab content styling --------  */
+.tabs .tab-content {
+    padding: 1em;
+    border-radius: 1em 1em 0em 0em;
+    width: 100%;
+    background: #fff;
+    order: 2;
+    /* hide elememts of the tab */
+    display: none;
+}
+
+/* .tabs .tab-content h2 {
+    font-size: 1.5em;
+} */
+
+/* -------- display if radio button checked --------  */
+.tabs input[type='radio']:checked + label + .tab-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.tabs input[type='radio']:checked + label + .tab-content-view {
+    background-color: azure;
+}
+
+.tabs input[type='radio']:checked + label + .tab-content-add {
+    background-color: whitesmoke;
+}
+
+.tabs input[type='radio']:checked + label + .tab-content-delete {
+    background-color: antiquewhite;
+}
+
+
+
+
+
+/* -------- tab label styling --------  */
+
+.label-view {
+    color: #578c8c;
+    background: rgb(255, 255, 255);
+    border: 0.15em solid #578c8c;
+    border-radius: 0.5em 0.5em 0em 0em;
+}
+
+.label-view:hover {
+    background: azure;
+}
+
+.label-add {
+    color: #929292;
+    background: rgb(255, 255, 255);
+    border: 0.15em solid #929292;
+    border-radius: 0.5em 0.5em 0em 0em;
+}
+
+.label-add:hover {
+    background: whitesmoke;
+}
+
+.label-delete {
+    color: #dc3545;
+    background: rgb(255, 255, 255);
+    border: 0.15em solid #dc3545;
+    border-radius: 0.5em 0.5em 0em 0em;
+}
+
+.label-delete:hover {
+    background: antiquewhite;
+}
+
+.tabs input[type='radio']:checked + .label-add {
+    color: #929292;
+    border-top: 0.15em solid #929292;
+    border-left: 0.15em solid #929292;
+    border-right: 0.15em solid #929292;
+    border-bottom: 0.15em solid whitesmoke;
+    background: whitesmoke;
+    border-radius: 0.5em 0.5em 0em 0em;
+}
+
+.tabs input[type='radio']:checked + .label-view {
+    color: #578c8c;
+    border-top: 0.15em solid #578c8c;
+    border-left: 0.15em solid #578c8c;
+    border-right: 0.15em solid #578c8c;
+    border-bottom: 0.15em solid azure;
+    background: azure;
+    border-radius: 0.5em 0.5em 0em 0em;
+}
+
+
+.tabs input[type='radio']:checked + .label-delete {
+    color: #dc3545;
+    border-top: 0.15em solid #dc3545;
+    border-left: 0.15em solid #dc3545;
+    border-right: 0.15em solid #dc3545;
+    border-bottom: 0.15em solid antiquewhite;
+    background: antiquewhite;
+    border-radius: 0.5em 0.5em 0em 0em;
+}
+/* -------- end of dashboard tab styling --------  */
+
+
+
+/* -------- start of focus styling --------  */
+
+/* -------- select, input focus --------  */
+select:focus,
+input:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 0.5em #719ECE;
+}
+
+/* -------- readonly focus to none --------  */
+input:read-only:focus {
+    outline-style: none;
+	box-shadow: none;
+	border-color: transparent; 
+}
+
+/* -------- button focus --------  */
+button:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 0.5em #719ECE; 
+}
+/* -------- end of focus styling --------  */
+
+
+
+/* -------- start of form and form-inputbox styling --------  */
+
+form {
+    margin: 2em 0em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------- searchbar style --------  */
+.search-control {
+    width: 100%;
+} 
+
+.search-bar {
+    flex: 0.16 1 63.42%;
+    width: 100%;
+    font-size: 1.2em;
+    border: 0.1em solid #80808066;
+    border-radius: 0.3em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0.65em;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* -------- form style --------  */
+.form-control {
+    width: 100%;
+    padding: 0em 4em;
+    /* background: #b7b7b7; */
+}
+
+.form-control-info {
+    border: 0.1em solid #dedada;
+    border-radius: 0.5em;
+    background-color: whitesmoke;   
+}
+
+/* -------- to keep form-inputbox 100% --------  */
+.col {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* -------- form inputbar style --------  */
+.form-inputbar {
+    text-transform: uppercase;
+    font-size: 1em;
+    border: 0.1em solid #80808066;
+    border-radius: 0.3em;
+    padding: 0.65em;
+    width: 100%;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* -------- form label style --------  */
+.form-label {
+    font-size: 1em;
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 1em;
+}
+
+/* -------- form inputbar readonly style --------  */
+.form-inputbar[readonly] {
+    border: 0.1em solid transparent;
+    background: #75757540;
+}
+
+/* -------- form inputbar email no uppercase --------  */
+.form-inputbar[type='email'] {
+    text-transform: none;
+}
+
+
+/* -------- form select menu no uppercase --------  */
+.form-select {
+    text-transform: none;
+}
+
+/* -------- form inputbar placeholder no uppercase --------  */
+input::placeholder {
+    text-transform: none;
+}
+/* -------- end of form and form-inputbox styling --------  */
+
+
+
+/* -------- start of inputbox styling --------  */
+
+/* -------- to keep inputbox 100% --------  */
+.row {
+    width: 100%;
+    display: flex;
+    flex: 0 0 auto;
+    padding: 1em;
+}
+
+.input-control {
+    background: transparent;
+}
+
+/* -------- inputbox label style --------  */
+.input-label {
+    font-weight: 600;
+    color: #3e3838;
+    background: #bbbba7;
+    padding: 1em;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    border: 0.01em solid #80808066;
+}
+
+/* -------- inputbox style --------  */
+.input-inputbar {
+    flex: 1 0 30%;
+    font-size: 1.3em;
+    border: 0.01em solid #80808066;
+    border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    padding: 0.65em;
+    width: 100%;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+/* -------- end of inputbox styling --------  */
+
+
+
+/* -------- start of form-inputbox and inputbox media query --------  */
+
+@media screen and (min-width: 900px) {
+    
+    /* -------- to keep form-inputbox in a row --------  */
+    .col {
+        flex: 0 0 auto;
+        width: 33.3333333333%;
+    }
+    
+    /* -------- to keep inputbox in a row --------  */
+    .row {
+        flex: 0 0 auto;
+        width: 33.33%;
+    }
+}
+/* -------- end of form-inputbox and inputbox media query --------  */
+
+
+
+/* -------- start of sub-container styling --------  */
+
+.content {
+    font-weight: 500;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.2em;
+    border: 0.01em solid transparent;
+}
+
+/* -------- amount received style--------  */
+#content-div1 {
+    background-color: antiquewhite;
+    border-color: antiquewhite;
+}
+
+/* -------- amount transfered style--------  */
+#content-div2 {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+/* -------- amount deposited style--------  */
+#content-div3 {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+/* -------- amount withdrawn style--------  */
+#content-div4 {
+    background-color: #e7e8ea;
+    border-color: #dddfe2;
+}
+
+/* -------- no transaction style--------  */
+#content-div5 {
+    background-color: #f99b90;
+    border-color: salmon;
+}
+/* -------- end of sub-container styling --------  */
+
+
+
+/* -------- start of login form styling --------- */
+
+.bg-modal {
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content {
+    width: 23em;
+    height: 30em;
+    background-color: whitesmoke;
+    border-radius: 0.3em;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+.modal-content-employee {
+    background-color: mintcream;
+}
+
+.modal-content-manager {
+    background-color: antiquewhite;
+}
+
+.log-control {
+    margin: 0;
+    flex-flow: column wrap;
+}
+
+.form-col {
+    margin-bottom: 1.5em;
+    width: 90%;
+}
+
+.log-label {
+    font-size: 0.9em;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0em 0em 0.5em 1em;
+    align-items: flex-start;
+}
+
+.log-input {
+    font-size: 1em;
+    border: 0.1em solid #80808066;
+    border-radius: 4em;
+    padding: 1em;
+    width: 100%;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0.28em;
+    font-size: 3em;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.btn-login {
+    margin: 1.5em 0;
+    color: #fff;
+    background-color: #0d6efd;
+    padding: 0.6em 7.7em;
+
+}
+
+.btn-home-login {
+    width: 300px;
+    margin: 0em 1.5em 1em 0em;
+    color: #fff;
+    text-align: center;
+    border-radius: 5em;
+    border: 0.2em solid #fff;
+    transition: border 300ms ease-in;
+}
+
+.btn-login:hover {
+    color: #0d6efd;
+    background-color: whitesmoke;
+
+}
+.btn-home-login:hover {
+    color: #fff;
+    background-color: #00000066;
+    border: 0.2em solid #000000a1;
+    transition: background-color 300ms ease-in;
+}
+
+.btn-login-employee:hover {
+    background-color: mintcream;
+}
+
+.btn-login-manager:hover {
+    background-color: antiquewhite;
+}
+
+.bg-modal-manager h2 {
+    font-size: 1.6em;
+    padding: 0.9em;
+}
+
+.bg-modal-employee h2 {
+    font-size: 1.6em;
+    padding: 0.9em;
+}
+
+.home {
+    width: 100%;
+    position: relative;
+    background: url(../img/welcome-bg.png) center bottom no-repeat;
+    background-size: cover;
+    padding: 70px 120px;
+}
+
+.home h1 {
+    background: none;
+    color: #fff;
+    text-align: right;
+    font-size: 3em;
+}
+
+.welcome-img {
+    opacity: 0.8;
+    width: 25em;
+    position: absolute;
+}
+
+.home-btn {
+    margin-bottom: 3em;
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+}
+
+.home-img {
+    margin-left: 5em;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.home-text {
+    margin-right: 5em;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+}
+/* -------- end of login form styling --------- */
+
+.active-link {
+    font-weight: 600;
+    color: #000000;
+}
+
+.log-control-reset a,
+.form-control a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.container-color-editform {
+    background-color: #e8f5eb;
+}
+
+.form-col-reset {
+    width: 100%;
+}
+
+.btn-reset {
+    margin: 0.5em;
+    padding: 0.5em 0;
+    width: 370px;
+}
+
+#btn-reset-exit {
+    background-color: #dc3545;
+    border: 0.15em solid #dc3545;
+}
+
+#btn-reset-exit:hover {
+    color: #dc3545;
+    background-color: whitesmoke;
+}
+
+.log-control-reset {
+    width: 23em;
+    height: 34em;
+}
+
+.container-color-resetform {
+    background-color: ghostwhite;
+}
+
+.container-color-funds {
+    background-color: #fdfce5;
+}
+
+.container-color-tables {
+    background-color: #d5ffe3;
+}
+/* -------- end of main section -------- */
+
+
+
+/* -------- start of footer section -------- */
+
+footer{
+    height: 20em;
+}
+/* -------- end of footer section -------- */

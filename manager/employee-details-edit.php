@@ -1,0 +1,165 @@
+<?php
+	session_start();
+	if (!isset($_SESSION['managerId']))
+	{ 
+		header('location:../index.php');
+	}
+
+    include "../backend/connect.php";
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RB | Edit Employee Details</title>
+
+    <link href = "../css/style.css" rel="stylesheet"></link>
+</head>
+<body>
+    <header>
+        <hi class="logo">RITCH BANK</hi>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <nav>
+            <ul>
+                <li><a href="manager-dashboard.php">Dashboard</a></li>
+                <li><a href="employee-list.php">Show Employees</a></li>
+                <li><a href="client-list.php">Show Clients</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <ul>
+                <li><a href="#/"><img class="profile-icon" src="../img/Profile-icon.png" alt="NO img"></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>Welcome <?php echo $_SESSION['managerName']; ?></li>
+                            <li><a href="../backend/reset-password.php?userManager=manager&managerName=<?php echo $_SESSION['managerName'] ?>">Reset Password</a></li>
+                            <li><a href="../backend/logout.php?managerLogout=managerLogout" class="logout-btn"><img class="logout-icon" src="../img/Logout.png" alt="NO img"> Logout</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <label for="nav-toggle" class="nav-toggle-lable"> 
+            <span></span>
+        </label>
+    </header>
+    
+    <main>
+        <section class="breadcrumbs">
+            <div class="breadcrumbs-title">
+                <?php 
+                        $ar = $con->query("SELECT * FROM `managerLogin` WHERE `id` = '$_SESSION[managerId]' LIMIT 1");
+                        $userData = $ar->fetch_assoc();
+
+                        $arr = $con->query("SELECT SUM(`balance`) AS total_balance FROM `clientAccounts`");
+                        $row = $arr->fetch_assoc();   
+
+                        echo "  <h2>".$userData['first_name']." ".$userData['last_name']." [Manager] </h2>
+                                <h2>Total Balance:  <script>var balanceNav =".$row['total_balance'].";</script>
+                                <span id='balanceNav'></span> </h2>";
+                    ?>                
+            </div>
+        </section>
+        <hr class="breadcrumbs-hr">
+        
+        <section class="container-color-editform">
+            <div class="container">
+                <?php
+
+                    if (isset($_GET['id']))
+                    {
+                        $_SESSION['editId'] = $_GET['id'];
+                    }
+
+                    $ar = $con->query("SELECT * FROM `employeeAccounts` WHERE `employeeAccounts`.`id` = '$_SESSION[editId]' LIMIT 1");
+                    $userData = $ar->fetch_assoc();
+
+                    if (isset($userData))
+                    {
+                        ?>
+                            <h2>Edit Employee Details</h2>
+                            <form action='../backend/form.php' method='POST' class='form-control'>
+                                <div class='col'>
+                                    <label class='form-label'>First Name</label>
+                                    <input type='text' name='first_name' value="<?php echo $userData['first_name'] ?>" class='form-inputbar' readonly/>
+                                </div>
+                                <div class='col'>
+                                    <label class='form-label'>Last Name</label>
+                                    <input type='text' name='last_name' value="<?php echo $userData['last_name'] ?>" class='form-inputbar' readonly/>
+                                </div>
+                                <div class='col'>
+                                    <label class='form-label'>Employee Id.</label>
+                                    <input type='number' value="<?php echo $userData['emp_id'] ?>" class='form-inputbar' readonly/>
+                                </div>
+                                <div class='col'>
+                                    <label class='form-label'>Email Id.</label>
+                                    <input type='email' name='email' value="<?php echo $userData['email'] ?>"  class='form-inputbar' placeholder='eg. john@gmail.com' required/>
+                                </div>
+                                <div class='col'>
+                                    <label class='form-label'>Contact Number</label>
+                                    <input type='number' name='contact_no' value="<?php echo $userData['contact_no'] ?>" class='form-inputbar' placeholder='Enter valid contact number' required/>
+                                </div>
+                                <div class='col'>
+                                    <label class='form-label'>Date of Birth</label>
+                                    <input type='text' value="<?php $dob = date("jS F, Y", strtotime($userData['dob'])); echo $dob; ?>" class='form-inputbar' style="text-transform: none;" readonly/>
+                                </div>
+                                <div class='col'>
+                                    <label class='form-label'>Aadhaar Number</label>
+                                    <input type='number' value="<?php echo $userData['aadhaar_no'] ?>" class='form-inputbar' readonly/>
+                                </div>
+                                <div class='col'>
+                                    <label class='form-label'>State</label>
+                                    <select name='state' class='form-inputbar form-select' required>
+                                        <option value="<?php echo $userData['state'] ?>"><?php echo $userData['state'] ?></option>
+                                        <?php                        
+                                            $arr = $con->query("SELECT * FROM `state`");
+                                            if ($arr->num_rows > 0)
+                                            {
+                                                while ($row = $arr->fetch_assoc())
+                                                {
+                                                    echo "<option value='$row[state_name]'>$row[state_name]</option>";
+                                                }
+                                            }
+                                        ?>
+                                    </select>
+                                </div>
+                                <div class='col'>
+                                    <label class='form-label'>District</label>
+                                    <input type='text' name='district' value="<?php echo $userData['district'] ?>" class='form-inputbar' required/>
+                                </div>
+                                <div class='col'>
+                                    <label class='form-label'>City</label>
+                                    <input type='text' name='city' value="<?php echo $userData['city'] ?>" class='form-inputbar' placeholder='Enter City / Town' required/>
+                                </div>
+                                <div class='col'>
+                                    <label class='form-label'>Permanent Address</label>
+                                    <input type='text' name='address' value="<?php echo $userData['address'] ?>" class='form-inputbar' required/>
+                                </div>
+                                <div class='col'>
+                                </div>
+                                <div class='col'>
+                                    <a href="manager-dashboard.php"><div class='form-inputbar btn' id='btn-form-exit' onclick="return checkSubmit()">Exit</div></a>
+                                </div>
+                                <div class='col'>
+                                    <button type='reset' class='form-inputbar btn btn-delete' id='btn-form-reset' onclick='return checkDelete()'>Reset</button>
+                                </div>
+                                <div class='col'>
+                                    <button type='submit' name='edit_employee' class='form-inputbar btn btn-view' id='btn-form-submit'>Submit</button>
+                                </div>
+                            </form>
+                        <?php                                                
+                    }
+                    else
+                        echo "<script>alert('Employee Not Found.')</script>";
+                ?> 
+            </div>
+        </section>
+        <hr>
+    </main>
+
+    <footer></footer>
+    
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
