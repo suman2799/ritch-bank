@@ -6,7 +6,7 @@ to enhance security.
 ## Installing
 
 * Install XAMPP and Start Apache and MySQL modules.
-* Download the Repository files into your local machine and run open ```index.html``` in localhost.
+* Download the Repository files into your local machine and open ```index.html``` in localhost.
 
 ## Documentation
 
